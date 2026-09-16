@@ -1,4 +1,7 @@
 
+
+
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -325,7 +328,6 @@
         setInterval(updateCountdown, 1000);
 
 
-        // إنشاء القلوب والبالونات
         function createFallingItem() {
 
             const item = document.createElement("div");
@@ -356,7 +358,6 @@
             }, duration * 1000 + 1000);
         }
 
-        // نزول العناصر باستمرار
         setInterval(createFallingItem, 350);
 
     </script>
