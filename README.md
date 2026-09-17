@@ -375,42 +375,6 @@ textarea::placeholder{
 }
 
 
-.music-button{
-    margin-top:25px;
-
-    border:none;
-    outline:none;
-    cursor:pointer;
-
-    padding:16px 30px;
-    border-radius:50px;
-
-    color:white;
-    background:linear-gradient(
-        135deg,
-        #ff315f,
-        #d90045
-    );
-
-    font-size:17px;
-    font-weight:bold;
-
-    box-shadow:
-        0 8px 25px rgba(255,0,70,.35);
-
-    transition:.25s;
-}
-
-.music-button:hover{
-    transform:translateY(-3px);
-    box-shadow:
-        0 12px 35px rgba(255,0,70,.5);
-}
-
-.music-button:active{
-    transform:scale(.96);
-}
-
 
 
 .falling{
@@ -619,12 +583,7 @@ textarea::placeholder{
         🎵 تشغيل الموسيقى
     </button>
 
-  <audio id="birthdayMusic" loop>
-        <source
-            src="https://www.youtube.com/shorts/OWKag_BKXJQ"
-            type="audio/mpeg"
-        >
-    </audio>
+ 
 
 </main>
 
@@ -728,47 +687,6 @@ updateCountdown();
 
 setInterval(updateCountdown,1000);
 
-
-/* =================================
-   الموسيقى
-================================= */
-
-const music = document.getElementById("birthdayMusic");
-const musicBtn = document.getElementById("musicBtn");
-
-
-musicBtn.addEventListener("click", async () => {
-
-    try{
-
-        if(music.paused){
-
-            await music.play();
-
-            musicBtn.textContent = "⏸️ إيقاف الموسيقى";
-
-        }else{
-
-            music.pause();
-
-            musicBtn.textContent = "🎵 تشغيل الموسيقى";
-
-        }
-
-    }catch(error){
-
-        alert(
-            "حط رابط MP3 مباشر للموسيقى الأول 🎵"
-        );
-
-    }
-
-});
-
-
-/* =================================
-   القلوب والبالونات
-================================= */
 
 function createFallingItem(){
 
