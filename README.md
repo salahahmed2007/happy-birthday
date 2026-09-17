@@ -577,12 +577,7 @@ textarea::placeholder{
         </div>
 
   </div>
-
-    <!-- الموسيقى -->
- <button class="music-button" id="musicBtn">
-        🎵 تشغيل الموسيقى
-    </button>
-
+ 
  
 
 </main>
